@@ -42,7 +42,7 @@ select round(sum(order_details.quantity*pizzas.price),2) as total_revenue
 from order_details
 join pizzas 
 on order_details.pizza_id = pizzas.pizza_id;
-
+```
 ### 2. highest-priced pizza
 ```sql
 SELECT  t.name, p.price
